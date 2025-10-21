@@ -32,7 +32,6 @@ Partial Class frmCadastroProduto
         Me.Label4 = New System.Windows.Forms.Label()
         Me.CbtCategoria = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cbbFornecedor = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnSalvar = New System.Windows.Forms.Button()
         Me.txtCodigoLote = New System.Windows.Forms.TextBox()
@@ -44,6 +43,7 @@ Partial Class frmCadastroProduto
         Me.txtQuantidade = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtMarca = New System.Windows.Forms.TextBox()
+        Me.txtFornecedor = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txtNome
@@ -128,15 +128,6 @@ Partial Class frmCadastroProduto
         Me.Label5.Size = New System.Drawing.Size(55, 13)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = " Categoria"
-        '
-        'cbbFornecedor
-        '
-        Me.cbbFornecedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbbFornecedor.FormattingEnabled = True
-        Me.cbbFornecedor.Location = New System.Drawing.Point(497, 172)
-        Me.cbbFornecedor.Name = "cbbFornecedor"
-        Me.cbbFornecedor.Size = New System.Drawing.Size(121, 21)
-        Me.cbbFornecedor.TabIndex = 10
         '
         'Label6
         '
@@ -231,11 +222,19 @@ Partial Class frmCadastroProduto
         Me.txtMarca.Size = New System.Drawing.Size(100, 20)
         Me.txtMarca.TabIndex = 20
         '
+        'txtFornecedor
+        '
+        Me.txtFornecedor.Location = New System.Drawing.Point(497, 172)
+        Me.txtFornecedor.Name = "txtFornecedor"
+        Me.txtFornecedor.Size = New System.Drawing.Size(100, 20)
+        Me.txtFornecedor.TabIndex = 21
+        '
         'frmCadastroProduto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtFornecedor)
         Me.Controls.Add(Me.txtMarca)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.txtQuantidade)
@@ -247,7 +246,6 @@ Partial Class frmCadastroProduto
         Me.Controls.Add(Me.txtCodigoLote)
         Me.Controls.Add(Me.btnSalvar)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.cbbFornecedor)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.CbtCategoria)
         Me.Controls.Add(Me.Label4)
@@ -276,7 +274,6 @@ Partial Class frmCadastroProduto
     Friend WithEvents Label4 As Label
     Friend WithEvents CbtCategoria As ComboBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents cbbFornecedor As ComboBox
     Friend WithEvents Label6 As Label
     Friend WithEvents btnSalvar As Button
     Friend WithEvents txtCodigoLote As TextBox
@@ -288,4 +285,5 @@ Partial Class frmCadastroProduto
     Friend WithEvents txtQuantidade As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents txtMarca As TextBox
+    Friend WithEvents txtFornecedor As TextBox
 End Class

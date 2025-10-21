@@ -10,9 +10,10 @@
     End Sub
 
     Private Sub btnRelatorioVencimento_Click(sender As Object, e As EventArgs) Handles btnRelatorioVencimento.Click
-        Dim relatorioForm As New frmRelatorioVencimento
-        relatorioForm.CarregarRelatório("vencidos")
+        Dim relatorioForm As New frmRelatorioVencimento()
+        relatorioForm.CarregarRelatorio("vencidos") ' ✅ certo
         relatorioForm.ShowDialog()
+
     End Sub
 
     Private Sub btnMovimentacao_Click(sender As Object, e As EventArgs) Handles btnMovimentacao.Click

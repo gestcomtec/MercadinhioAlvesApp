@@ -31,14 +31,14 @@ Partial Class frmLogin
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(130, 47)
+        Me.txtUsername.Location = New System.Drawing.Point(92, 77)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(100, 20)
         Me.txtUsername.TabIndex = 0
         '
         'txtSenha
         '
-        Me.txtSenha.Location = New System.Drawing.Point(130, 96)
+        Me.txtSenha.Location = New System.Drawing.Point(78, 120)
         Me.txtSenha.Name = "txtSenha"
         Me.txtSenha.Size = New System.Drawing.Size(100, 20)
         Me.txtSenha.TabIndex = 1
@@ -46,7 +46,7 @@ Partial Class frmLogin
         '
         'btnEntrar
         '
-        Me.btnEntrar.Location = New System.Drawing.Point(335, 147)
+        Me.btnEntrar.Location = New System.Drawing.Point(60, 184)
         Me.btnEntrar.Name = "btnEntrar"
         Me.btnEntrar.Size = New System.Drawing.Size(75, 23)
         Me.btnEntrar.TabIndex = 2
@@ -56,7 +56,7 @@ Partial Class frmLogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 53)
+        Me.Label1.Location = New System.Drawing.Point(33, 80)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 3
@@ -65,7 +65,7 @@ Partial Class frmLogin
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(63, 102)
+        Me.Label2.Location = New System.Drawing.Point(33, 120)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 4
@@ -75,6 +75,9 @@ Partial Class frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.BackgroundImage = Global.MercadinhoAlvesApp.My.Resources.Resources.MercadinhoAlves1
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -82,7 +85,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.txtSenha)
         Me.Controls.Add(Me.txtUsername)
         Me.Name = "frmLogin"
-        Me.Text = "Form1"
+        Me.Text = "Mercadinho Alves"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()

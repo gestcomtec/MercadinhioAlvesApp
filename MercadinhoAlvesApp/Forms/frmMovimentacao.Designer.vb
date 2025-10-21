@@ -103,7 +103,7 @@ Partial Class frmMovimentacao
         '
         'btnRegistrar
         '
-        Me.btnRegistrar.Location = New System.Drawing.Point(353, 289)
+        Me.btnRegistrar.Location = New System.Drawing.Point(360, 301)
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(75, 23)
         Me.btnRegistrar.TabIndex = 8
@@ -112,7 +112,7 @@ Partial Class frmMovimentacao
         '
         'btnVoltar
         '
-        Me.btnVoltar.Location = New System.Drawing.Point(150, 319)
+        Me.btnVoltar.Location = New System.Drawing.Point(225, 301)
         Me.btnVoltar.Name = "btnVoltar"
         Me.btnVoltar.Size = New System.Drawing.Size(75, 23)
         Me.btnVoltar.TabIndex = 9

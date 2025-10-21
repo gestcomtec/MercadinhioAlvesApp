@@ -22,22 +22,22 @@ Partial Class frmRelatorioEstoque
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.dgvRelatorioEstoque = New System.Windows.Forms.DataGridView()
+        Me.dgvEstoque = New System.Windows.Forms.DataGridView()
         Me.btnVoltar = New System.Windows.Forms.Button()
-        CType(Me.dgvRelatorioEstoque, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvEstoque, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'dgvRelatorioEstoque
+        'dgvEstoque
         '
-        Me.dgvRelatorioEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvRelatorioEstoque.Location = New System.Drawing.Point(141, 211)
-        Me.dgvRelatorioEstoque.Name = "dgvRelatorioEstoque"
-        Me.dgvRelatorioEstoque.Size = New System.Drawing.Size(403, 150)
-        Me.dgvRelatorioEstoque.TabIndex = 0
+        Me.dgvEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvEstoque.Location = New System.Drawing.Point(36, 211)
+        Me.dgvEstoque.Name = "dgvEstoque"
+        Me.dgvEstoque.Size = New System.Drawing.Size(715, 150)
+        Me.dgvEstoque.TabIndex = 0
         '
         'btnVoltar
         '
-        Me.btnVoltar.Location = New System.Drawing.Point(268, 167)
+        Me.btnVoltar.Location = New System.Drawing.Point(373, 388)
         Me.btnVoltar.Name = "btnVoltar"
         Me.btnVoltar.Size = New System.Drawing.Size(75, 23)
         Me.btnVoltar.TabIndex = 1
@@ -50,15 +50,15 @@ Partial Class frmRelatorioEstoque
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnVoltar)
-        Me.Controls.Add(Me.dgvRelatorioEstoque)
+        Me.Controls.Add(Me.dgvEstoque)
         Me.Name = "frmRelatorioEstoque"
         Me.Text = "frmRelatorioEstoque"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.dgvRelatorioEstoque, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvEstoque, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents dgvRelatorioEstoque As DataGridView
+    Friend WithEvents dgvEstoque As DataGridView
     Friend WithEvents btnVoltar As Button
 End Class

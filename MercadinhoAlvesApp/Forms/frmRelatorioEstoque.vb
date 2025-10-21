@@ -3,45 +3,45 @@ Imports System.Data.SQLite
 
 Public Class frmRelatorioEstoque
 
+    ' Evento disparado ao carregar o formulário
     Private Sub frmRelatorioEstoque_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CarregarRelatorio()
+        CarregarRelatorioEstoque()
     End Sub
 
-    Private Sub CarregarRelatorio()
+    ' Método que carrega os dados do estoque com nome do fornecedor
+    Private Sub CarregarRelatorioEstoque()
         Try
+            ' Consulta SQL com INNER JOIN para trazer dados do produto e fornecedor
             Dim sql As String = "
-    SELECT 
-        p.nome AS produto,
-        p.codigo_barras,
-        e.quantidade,
-        e.lote,
-        e.data_validade,
-        f.nome AS fornecedor
-    FROM Estoque e
-    INNER JOIN Produtos p ON e.produto_id = p.produto_id
-    LEFT JOIN Fornecedores f ON p.fornecedor_id = f.fornecedor_id
-"
+                SELECT 
+                    p.nome AS produto,
+                    p.codigo_barras,
+                    e.quantidade,
+                    e.lote,
+                    e.data_validade,
+                    p.fornecedor_nome AS fornecedor
+                FROM Estoque e
+                INNER JOIN Produtos p ON e.produto_id = p.produto_id
+                WHERE e.data_validade IS NOT NULL"
 
-
+            ' Executa a consulta e carrega os dados no DataGridView
             Dim dt As DataTable = DBHelper.Consultar(sql)
-            dgvRelatorioEstoque.DataSource = dt
+            dgvEstoque.DataSource = dt
+
+            ' Formata colunas
+            dgvEstoque.Columns("quantidade").DefaultCellStyle.Format = "N0"
+            dgvEstoque.Columns("data_validade").DefaultCellStyle.Format = "dd/MM/yyyy"
 
         Catch ex As Exception
+            ' Exibe mensagem de erro em caso de falha
             MessageBox.Show("Erro ao carregar relatório de estoque: " & ex.Message)
         End Try
     End Sub
 
+    ' Botão: Voltar (fecha o formulário diretamente, sem mensagem)
     Private Sub btnVoltar_Click(sender As Object, e As EventArgs) Handles btnVoltar.Click
-        Dim resposta = MessageBox.Show("Deseja voltar ao menu principal?", "Confirmar saída", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-
-        If resposta = DialogResult.Yes Then
-            For i As Double = 1 To 0 Step -0.1
-                Me.Opacity = i
-                Threading.Thread.Sleep(30)
-            Next
-            Me.Close()
-        End If
+        Me.Close()
     End Sub
 
-
 End Class
+
