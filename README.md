@@ -27,3 +27,4 @@ Facilitar o gerenciamento de estoque e evitar perdas por vencimento, garantindo 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/gestcomtec/MercadinhoAlvesApp.git
+"# MercadinhioAlvesApp" 
