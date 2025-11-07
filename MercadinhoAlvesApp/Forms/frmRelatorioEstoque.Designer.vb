@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmRelatorioEstoque
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,37 +20,29 @@ Partial Class frmRelatorioEstoque
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.dgvEstoque = New System.Windows.Forms.DataGridView()
-        Me.btnVoltar = New System.Windows.Forms.Button()
         CType(Me.dgvEstoque, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvEstoque
         '
         Me.dgvEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvEstoque.Location = New System.Drawing.Point(36, 211)
+        Me.dgvEstoque.Location = New System.Drawing.Point(54, 325)
+        Me.dgvEstoque.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.dgvEstoque.Name = "dgvEstoque"
-        Me.dgvEstoque.Size = New System.Drawing.Size(715, 150)
+        Me.dgvEstoque.RowHeadersWidth = 62
+        Me.dgvEstoque.Size = New System.Drawing.Size(1072, 231)
         Me.dgvEstoque.TabIndex = 0
-        '
-        'btnVoltar
-        '
-        Me.btnVoltar.Location = New System.Drawing.Point(373, 388)
-        Me.btnVoltar.Name = "btnVoltar"
-        Me.btnVoltar.Size = New System.Drawing.Size(75, 23)
-        Me.btnVoltar.TabIndex = 1
-        Me.btnVoltar.Text = "Voltar"
-        Me.btnVoltar.UseVisualStyleBackColor = True
         '
         'frmRelatorioEstoque
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btnVoltar)
+        Me.ClientSize = New System.Drawing.Size(1200, 692)
         Me.Controls.Add(Me.dgvEstoque)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmRelatorioEstoque"
         Me.Text = "frmRelatorioEstoque"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -60,5 +52,4 @@ Partial Class frmRelatorioEstoque
     End Sub
 
     Friend WithEvents dgvEstoque As DataGridView
-    Friend WithEvents btnVoltar As Button
 End Class
